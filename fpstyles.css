@@ -1,0 +1,92 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+}
+
+.start{
+    max-width: 20%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.page {
+    text-align: center;
+}
+
+.final-page {
+    display: block;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+.final-page h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+.final-page p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #666;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff7b7b;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff5252;
+}
+
+button:focus {
+    outline: none;
+}
+/* Add styles for the trash can */
+.trash-can {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    pointer-events: none; /* Make it ignore pointer events so it doesn't interfere with button clicks */
+}
+
+.trash-can img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Add animation keyframes for the button */
+@keyframes flyToTrashCan {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(400px, -600px) rotate(360deg); /* Adjust the values as needed */
+        opacity: 0;
+    }
+}
