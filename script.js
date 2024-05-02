@@ -1,3 +1,5 @@
+
+
 const buttons = document.querySelectorAll("[data-carousel-button]");
 
 buttons.forEach(button => {
@@ -25,3 +27,16 @@ buttons.forEach(button => {
     slides.children[newIndex].dataset.active = true;
   });
 });
+
+// Get reference to the audio element
+const backgroundMusic = document.getElementById('backgroundMusic');
+
+// Function to pause the background music
+function pauseBackgroundMusic() {
+    backgroundMusic.pause();
+}
+
+// Function to play the background music
+function playBackgroundMusic() {
+    backgroundMusic.play();
+}
