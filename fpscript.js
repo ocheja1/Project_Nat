@@ -17,7 +17,7 @@ function playBackgroundMusic() {
 
 // Add event listeners to buttons
 yesBtn.addEventListener('click', function() {
-    alert("a package is coming for you soon!"); // Replace this with your preferred action
+    alert("Look Here!"); // Replace this with your preferred action
 });
 
 noBtn.addEventListener('click', function() {
